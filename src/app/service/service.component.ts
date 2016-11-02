@@ -3,9 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-service',
   template: `
-    <p>
-      service Works!
-    </p>
+    <app-cmp-a></app-cmp-a>
+    <app-cmp-b></app-cmp-b>
   `,
   styles: []
 })
