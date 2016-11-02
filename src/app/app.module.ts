@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { CmpAComponent } from './service/cmp-a.component';
 import { CmpBComponent } from './service/cmp-b.component';
+import { ServiceComponent } from './service/service.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CmpAComponent,
-    CmpBComponent
+    CmpBComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
