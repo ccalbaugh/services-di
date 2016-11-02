@@ -13,6 +13,6 @@ export class CmpAComponent {
   constructor(private logService: LogService) {}
 
   onLog(value: string) {
-    
+    this.logService.writeToLog(value);
   }
 }
