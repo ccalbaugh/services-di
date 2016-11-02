@@ -14,15 +14,15 @@ export class CmpBComponent {
 
   constructor(private logService: LogService, private dataService: DataService) {}
 
-  onLog(value: string) {
-    this.logService.writeToLog(value);
-  }
+    onLog(value: string) {
+      this.logService.writeToLog(value);
+    }
 
-  onStore(value: string) {
-    this.dataService.addData(value);
-  }
+    onStore(value: string) {
+      this.dataService.addData(value);
+    }
 
-  onGet() {
-    this.items = this.dataService.getData();
-  }
+    onGet() {
+      this.items = this.dataService.getData();
+    }
 }
