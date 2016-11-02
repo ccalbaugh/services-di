@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
+import { LogService } from './log.service';
+
 @Component({
   selector: 'app-cmp-a',
-  template: `
-    <p>
-      cmp-a Works!
-    </p>
-  `,
-  styles: []
+  templateUrl: './cmp-a.component.html',
+  providers: [LogService]
 })
-export class CmpAComponent implements OnInit {
+export class CmpAComponent {
+  value = '';
 
-  constructor() { }
+  constructor(private logService: LogService) {}
 
-  ngOnInit() {
+  onLog(value: string) {
+    
   }
-
 }
