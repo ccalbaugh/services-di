@@ -25,7 +25,7 @@ export class CmpAComponent {
       this.items = this.dataService.getData();
     }
 
-    onSend(string: value) {
+    onSend(value: string) {
       this.dataService.pushData(value);
     }
 }

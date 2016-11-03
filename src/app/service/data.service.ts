@@ -4,7 +4,7 @@ import { LogService } from './log.service';
 
 @Injectable()
 export class DataService {
-  pushData = new EventEmitter<string>();
+  pushedData = new EventEmitter<string>();
 
   private data: string[] = [];
 
@@ -20,6 +20,6 @@ export class DataService {
   }
 
   pushData(value: string) {
-    this.pushData.emit(value);
+    this.pushedData.emit(value);
   }
 }
