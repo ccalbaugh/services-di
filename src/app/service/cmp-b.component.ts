@@ -7,7 +7,7 @@ import { DataService } from './data.service';
   selector: 'app-cmp-b',
   templateUrl: './cmp-b.component.html'
 })
-export class CmpBComponent {
+export class CmpBComponent implements OnInit {
   value = '';
   items: string[] = [];
 
@@ -23,5 +23,11 @@ export class CmpBComponent {
 
     onGet() {
       this.items = this.dataService.getData();
+    }
+
+    ngOnInit() {
+      this.dataService.pushedData.subscribe(
+        data => this.value = data
+      );
     }
 }
