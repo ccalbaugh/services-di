@@ -6,7 +6,7 @@ import { DataService } from './data.service';
 @Component({
   selector: 'app-cmp-b',
   templateUrl: './cmp-b.component.html',
-  providers: [LogService, DataService]
+  providers: [LogService]
 })
 export class CmpBComponent {
   value = '';
